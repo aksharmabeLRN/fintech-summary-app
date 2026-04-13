@@ -1,0 +1,63 @@
+.editor-layout {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.smart-sidebar {
+  width: 250px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.btn-action {
+  background: #e9ecef;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-action:hover {
+  background: #dde2e6;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.btn-save {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-save:hover {
+  background: #0b5ed7;
+}
+
+.editor-main {
+  flex-grow: 1;
+  background: white;
+}
