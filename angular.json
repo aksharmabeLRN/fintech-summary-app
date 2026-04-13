@@ -25,7 +25,11 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/quill/dist/quill.snow.css"
+            ],
+            "allowedCommonJsDependencies": [
+              "quill-delta"
             ]
           },
           "configurations": {

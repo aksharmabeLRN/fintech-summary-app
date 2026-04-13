@@ -1,0 +1,32 @@
+<div class="editor-layout">
+  
+  <aside class="smart-sidebar">
+    <h3>Smart Actions</h3>
+    <p class="subtitle">1-Click Insertions</p>
+    
+    <button class="btn-action" (click)="insertComplianceDisclaimer()">
+      + Insert Mini-Miranda
+    </button>
+    
+    <button class="btn-action" (click)="insertMissingStipulations()">
+      + Request Stipulations
+    </button>
+
+    <div class="spacer"></div>
+
+    <button class="btn-save" (click)="saveToBackend()">
+      Save to CRM
+    </button>
+  </aside>
+
+  <main class="editor-main" [formGroup]="summaryForm">
+    <quill-editor 
+      #editor
+      formControlName="richTextContent" 
+      [modules]="quillModules"
+      placeholder="AI is generating call summary..."
+      [styles]="{height: '400px'}">
+    </quill-editor>
+  </main>
+
+</div>
